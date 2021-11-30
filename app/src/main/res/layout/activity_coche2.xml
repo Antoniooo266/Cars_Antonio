@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/coche_2" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/select"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Seleccionar"
@@ -31,10 +31,10 @@
         app:layout_constraintVertical_bias="0.901" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="<-"
+        android:text="@string/flecha"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.349"
@@ -43,10 +43,10 @@
         app:layout_constraintVertical_bias="0.805" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="->"
+        android:text="@string/flecha_1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.659"

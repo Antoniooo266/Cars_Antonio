@@ -9,4 +9,6 @@
     <string name="coche_3">Franchesco Virginidad</string>
     <string name="coche_4">Autismus Prime Sport</string>
     <string name="coche_5">Super Deportivo LGTB+</string>
+    <string name="flecha"><![CDATA[<-]]></string>
+    <string name="flecha_1"><![CDATA[->]]></string>
 </resources>

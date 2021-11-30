@@ -10,7 +10,7 @@ class Coche_3 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_coche3)
 
-        val boton_coche3 = findViewById<Button>(R.id.button8)
+        val boton_coche3 = findViewById<Button>(R.id.button11)
 
         boton_coche3.setOnClickListener {
 
@@ -20,7 +20,7 @@ class Coche_3 : AppCompatActivity() {
 
         }
 
-        val boton_coche3_1 = findViewById<Button>(R.id.button7)
+        val boton_coche3_1 = findViewById<Button>(R.id.button5)
 
         boton_coche3_1.setOnClickListener {
 
