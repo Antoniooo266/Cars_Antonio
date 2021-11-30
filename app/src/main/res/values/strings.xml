@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Cars_Antonio</string>
     <string name="bienvenidos_a_racing_ensaladas_de_pu_etazos">Bienvenidos a Racing Ensaladas de Puñetazos</string>
+    <string name="menu">Mapa Circuito LavaPies</string>
+    <string name="boton_menu">Pulsa para ver el garaje de coches</string>
     <string name="Inicio">Comenzar</string>
     <string name="coche_1">Echeñike GT 5000</string>
     <string name="coche_2">Rayo ValleNavaja</string>
