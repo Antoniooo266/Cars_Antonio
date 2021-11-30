@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Cars_Antonio">
         <activity
+            android:name=".Coche_5"
+            android:exported="false" />
+        <activity
+            android:name=".Coche_4"
+            android:exported="false" />
+        <activity
+            android:name=".Coche_3"
+            android:exported="false" />
+        <activity
             android:name=".Coche_2"
             android:exported="false" />
         <activity

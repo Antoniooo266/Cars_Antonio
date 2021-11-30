@@ -4,21 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Coche_2">
+    tools:context=".Coche_4">
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imageView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/coche_2" />
+        app:srcCompat="@drawable/coche_4" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/button9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Siguiente"
@@ -30,7 +28,7 @@
         app:layout_constraintVertical_bias="0.847" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/button8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Seleccionar"
@@ -42,10 +40,10 @@
         app:layout_constraintVertical_bias="0.847" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/coche_2"
+        android:text="@string/coche_4"
         android:textColor="#000000"
         android:textSize="@android:dimen/app_icon_size"
         app:layout_constraintBottom_toBottomOf="parent"
