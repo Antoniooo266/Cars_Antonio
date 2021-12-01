@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Cars_Antonio">
         <activity
+            android:name=".SetCar"
+            android:exported="false" />
+        <activity
             android:name=".Menu_Cars"
             android:exported="false" />
         <activity

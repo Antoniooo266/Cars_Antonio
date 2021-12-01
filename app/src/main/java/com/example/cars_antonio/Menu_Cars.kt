@@ -3,7 +3,6 @@ package com.example.cars_antonio
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import android.widget.ImageButton
 
 class Menu_Cars : AppCompatActivity() {
@@ -15,7 +14,7 @@ class Menu_Cars : AppCompatActivity() {
 
         boton_coche.setOnClickListener {
 
-            val cambiando = Intent(this, Coche_1::class.java)
+            val cambiando = Intent(this, SetCar::class.java)
 
             startActivity(cambiando)
 

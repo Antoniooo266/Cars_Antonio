@@ -4,67 +4,72 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F40795"
-    tools:context=".Coche_3">
+    android:background="#000000"
+    android:foregroundTint="#FFFFFF"
+    tools:context=".SetCar">
 
-    <ImageView
-        android:id="@+id/imageView4"
+    <ImageButton
+        android:id="@+id/arrow_next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#00DC1414"
+        android:contentDescription="TODO"
+        android:foregroundTintMode="add"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:src="@android:drawable/ic_media_play"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.633"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/coche_3" />
+        app:layout_constraintVertical_bias="0.778"
+        app:tint="#6200EA"
+        tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck" />
 
-    <Button
-        android:id="@+id/button6"
+    <ImageButton
+        android:id="@+id/arrow_before"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Seleccionar"
+        android:background="#00DC1414"
+        android:contentDescription="TODO"
+        android:foregroundTint="#BD1E1E"
+        android:foregroundTintMode="add"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:rotationY="180"
+        android:src="@android:drawable/ic_media_play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.778"
+        app:tint="#6200EA"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/nameCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.901" />
+        app:layout_constraintVertical_bias="0.155" />
 
-    <TextView
-        android:id="@+id/textView4"
+    <ImageView
+        android:id="@+id/carImg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/coche_3"
-        android:textColor="#000000"
-        android:textSize="@android:dimen/app_icon_size"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.13" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/flecha"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.349"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.805" />
-
-    <Button
-        android:id="@+id/button11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/flecha_1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.659"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.805" />
+        app:layout_constraintVertical_bias="0.417" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
