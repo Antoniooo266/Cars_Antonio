@@ -1,7 +1,9 @@
 package com.example.cars_antonio
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
@@ -16,6 +18,7 @@ class SetCar : AppCompatActivity() {
         var name = findViewById<TextView>(R.id.nameCar)
         var car_next = findViewById<ImageButton>(R.id.arrow_next)
         var car_previous = findViewById<ImageButton>(R.id.arrow_before)
+        val setCar = findViewById<Button>(R.id.setCar)
 
         fun mostrarcoche(car: Car) {
 
@@ -30,6 +33,7 @@ class SetCar : AppCompatActivity() {
         val franCar = Car("Franchesco Virginidad", R.drawable.coche_3)
         val autiCar = Car("Autismus Prime Sport", R.drawable.coche_4)
         val lgtbCar = Car("SuperDeportivo LGTB+", R.drawable.coche_5)
+
         arrayCar.add(echeCar)
         arrayCar.add(rayoCar)
         arrayCar.add(franCar)
@@ -58,6 +62,14 @@ class SetCar : AppCompatActivity() {
             } else {
                 mostrarcoche(arrayCar[posicion])
             }
+        }
+
+        setCar.setOnClickListener {
+
+            val cambiando = Intent(this, Process_Circuit::class.java)
+
+            startActivity(cambiando)
+
         }
 
     }
