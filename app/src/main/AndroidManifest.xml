@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Cars_Antonio">
         <activity
+            android:name=".Menu_Pilot"
+            android:exported="false" />
+        <activity
+            android:name=".SetPilot"
+            android:exported="false" />
+        <activity
             android:name=".Process_Circuit"
             android:exported="false" />
         <activity

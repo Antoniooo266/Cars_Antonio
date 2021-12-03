@@ -66,7 +66,7 @@ class SetCar : AppCompatActivity() {
 
         setCar.setOnClickListener {
 
-            val cambiando = Intent(this, Process_Circuit::class.java)
+            val cambiando = Intent(this, SetPilot::class.java)
 
             startActivity(cambiando)
 
