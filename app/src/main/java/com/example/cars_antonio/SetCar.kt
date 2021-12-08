@@ -8,12 +8,20 @@ import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 
+val arrayCar = mutableListOf<Car>()
+var posicion = 0
+val echeCar = Car("Echenike 5000 GT", R.drawable.coche_1, 0, 120, 20, 1, 0)
+val rayoCar = Car("Rayo ValleNavaja", R.drawable.coche_2, 0, 100, 15, 6, 0)
+val franCar = Car("Franchesco Virginidad", R.drawable.coche_3, 0, 140, 25, 2, 0)
+val autiCar = Car("Autismus Prime Sport", R.drawable.coche_4, 0, 90, 15, 8, 0)
+val lgtbCar = Car("SuperDeportivo LGTB+", R.drawable.coche_5, 0, 69, 22, 5, 0)
+val RoadCars = arrayCar
+
 class SetCar : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cars)
 
-        val arrayCar = mutableListOf<Car>()
         var carImg = findViewById<ImageView>(R.id.carImg)
         var name = findViewById<TextView>(R.id.nameCar)
         var car_next = findViewById<ImageButton>(R.id.arrow_next)
@@ -23,16 +31,9 @@ class SetCar : AppCompatActivity() {
         fun mostrarcoche(car: Car) {
 
             carImg.setImageResource(car.img)
-            name.text = car.nombre
+            name.text = car.name
 
         }
-
-        var posicion = 0
-        val echeCar = Car("Echenike 5000 GT", R.drawable.coche_1)
-        val rayoCar = Car("Rayo ValleNavaja", R.drawable.coche_2)
-        val franCar = Car("Franchesco Virginidad", R.drawable.coche_3)
-        val autiCar = Car("Autismus Prime Sport", R.drawable.coche_4)
-        val lgtbCar = Car("SuperDeportivo LGTB+", R.drawable.coche_5)
 
         arrayCar.add(echeCar)
         arrayCar.add(rayoCar)

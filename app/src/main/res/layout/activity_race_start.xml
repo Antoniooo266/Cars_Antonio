@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".Race_Start">
+
+    <SeekBar
+        android:id="@+id/Echenike"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:progressDrawable="@drawable/road"
+        android:thumb="@drawable/coche_1_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.431"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.177" />
+
+    <SeekBar
+        android:id="@+id/Rayo"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:progressDrawable="@drawable/road"
+        android:thumb="@drawable/coche_2_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.431"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.257" />
+
+    <SeekBar
+        android:id="@+id/Franchesco"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:progressDrawable="@drawable/road"
+        android:thumb="@drawable/coche_3_3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.431"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <SeekBar
+        android:id="@+id/Autismus"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:background="#00FFFFFF"
+        android:progressDrawable="@drawable/road"
+        android:thumb="@drawable/coche_4_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.431"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.406" />
+
+    <SeekBar
+        android:id="@+id/LGTB"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:progressDrawable="@drawable/road"
+        android:thumb="@drawable/coche_5_5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.431"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.481" />
+
+
+    <ImageView
+        android:id="@+id/Winner"
+        android:layout_width="159dp"
+        android:layout_height="141dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.701"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/WinnerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.817" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
