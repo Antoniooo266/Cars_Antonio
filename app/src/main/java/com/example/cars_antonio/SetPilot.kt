@@ -27,7 +27,7 @@ class SetPilot : AppCompatActivity() {
 
             }else{
 
-                Toast.makeText(this, "Puta", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Introduce un nombre para continuar", Toast.LENGTH_SHORT).show()
 
             }
 
