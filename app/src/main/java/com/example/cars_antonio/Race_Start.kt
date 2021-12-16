@@ -1,10 +1,15 @@
 package com.example.cars_antonio
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.SeekBar
 import android.widget.TextView
+import kotlin.properties.Delegates
+
+lateinit var winner: String
+var winnerImg by Delegates.notNull<Int>()
 
 class Race_Start : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,8 +22,7 @@ class Race_Start : AppCompatActivity() {
         var Fran = findViewById<SeekBar>(R.id.Franchesco)
         var Autismus = findViewById<SeekBar>(R.id.Autismus)
         var LGTB = findViewById<SeekBar>(R.id.LGTB)
-        var winnertext = findViewById<TextView>(R.id.WinnerText)
-        var winnerImage = findViewById<ImageView>(R.id.Winner)
+
 
 
         var continuar = true
@@ -42,13 +46,16 @@ class Race_Start : AppCompatActivity() {
                     Thread.sleep(100)
 
 
-                    if (it.Distance >= 800){
+                    if (it.Distance >= 500){
 
-                        continuar = false
+                        winner = it.name
 
-                        winnertext.text = "Congrats you are the Winner " + it.name + "."
+                        winnerImg = it.img
 
-                        winnerImage.setImageResource(it.img)
+                        val cambiando = Intent(this, Podium::class.java)
+
+                        startActivity(cambiando)
+
 
                     }
                 }

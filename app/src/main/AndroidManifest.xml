@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Cars_Antonio">
         <activity
+            android:name=".Podium"
+            android:exported="false" />
+        <activity
             android:name=".Race_Start"
             android:exported="false" />
         <activity
